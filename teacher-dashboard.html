@@ -5,39 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StaffMetrics and ExamsHub-Teacher Portal</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-slate-800 flex justify-center items-center min-h-screen p-2 sm:p-4 font-sans">
-    <main class="w-full max-w-md bg-slate-850 rounded-lg min-h-[750px] max-h-[850px] flex flex-col justify-between border border-slate-800 relative text-slate-100 scrollbar-hide shadow-2xl">
+    <main class="w-full max-w-md bg-slate-850 rounded-lg min-h-[750px] flex flex-col justify-between border border-slate-800 relative text-slate-100 scrollbar-hide shadow-2xl">
         <header class="sticky top-0 z-100 bg-slate-900/80 backdrop-blur-lg text-white p-4 border-b border-slate-800/60 flex justify-between items-center">
             <div class="flex items-center space-x-4">
-                <a href="index.html" class="w-10 h-10 rounded-xl bg-slate-800 flex justify-center items-center hover:text-blue-400 transition-colors border border-slate-750"><span class="text-base">Arro back</span></a>
+                <a href="index.html" class="w-10 h-10 rounded-xl bg-slate-800 flex justify-center items-center hover:text-blue-400 transition-colors border border-slate-750"><span class="text-base"><i data-lucide="arrow-left"></i></span></a>
                 <div>
                     <h2 class="text-sm font-bold uppercase tracking-widest text-white">Mwalimu Workspace</h2>
                     <p class="text-xs text-blue-800 font-bold tracking-wider uppercase">Active session Logs</p>
                 </div>
             </div>
-            <div class="w-10 h-10 bg-gradient-to-tr from-blue-500 to-indigo-400 rounded-xl flex items-center justify-center border border-blue-400/40">
-                <span class="text-lg font-bold">account</span>
+            <div class="w-10 h-10 bg-gradient-to-tr from-blue-500 to-indigo-400 rounded-full flex items-center justify-center border border-blue-400/40">
+                <span class="text-lg font-bold"><i data-lucide="circle-user" class="w-10 h-10"></i></span>
             </div>
         </header>
 
         <div class="flex-1 p-6 space-y-6">
-            <div class="bg-blue-900/40 border border-blue-500/20  rounded-2xl p-4 flex items-center space-x-4 relative overflow-hidden">
+            <div class="bg-blue-900/40 border border-blue-500/20  rounded-2xl p-4 flex items-center space-x-4 relative">
                 <div class="absolute right-0 top-0 translate-x-3 -translate-y-3 w-16 h-16 bg-blue-500/10 rounded-full blur-xl"></div>
                 <div class="relative flex items-center justify-center">
                     <div class="absolute w-8 h-8 bg-blue-500/20 rounded-full pulse-effect"></div>
-                    <span class="text-blue-400 text-xl relative z-10 animate-bounce">radar</span>
+                    <span class="text-blue-400 text-xl relative z-10 animate-bounce"><i data-lucide="radar"></i></span>
                 </div>
                 <div class="flex-1">
                     <p class="text-xs font-black text-blue-300 uppercase tracking-wide">Auto Clock-out enabled</p>
-                    <p class="text-xs text-slate-400 font-medium mt-2">Compund Status: Within school vicinity</p>
+                    <p class="text-xs text-slate-400 font-medium mt-2">Compound Status: Within school vicinity</p>
                 </div>
             </div>
 
             <div class="py-6 flex flex-col items-center justify-center relative">
                 <div class="absolute w-40 h-40 border border-emerald-500/50 rounded-full animate-ping"></div>
                 <button class="w-36 h-36 bg-gradient-to-b from-emerald-300 to-emerald-500 hover:from-emerald-300 hover:to-emerald-600 text-white font-bold text-xs tracking-widest rounded-full border border-slate-600 group transition-all duration-300">
-                    <span class="text-4xl mb-2 transition-transform group-hover:scale-120">fingerprint</span>
+                    <span class=" flex justify-center items-center mb-2 transition-transform group-hover:scale-120"><i data-lucide="fingerprint" class="w-16 h-16 text-white opacity-95"></i></span>
                     <span>CLOCK IN</span>
                 </button>
             </div>
@@ -69,13 +70,17 @@
                     </div>
                 </div>
             </div>
+            <div class="flex-1 bg-blue-900/40 border border-blue-500/20  rounded-2xl p-4 text-center space-x-4 relative">
+                    <p class="text-lg font-black text-blue-300 uppercase tracking-widest">EXAMSHUB</p>
+                </div>
             <div class="bg-slate-900/40 border border-slate-800 rounded-2xl shadow-xl space-y-4">
+               
                 <div class="flex justify-between items-center border border-slate-800 p-2 tracking-widest">
                     <div class="flex items-center space-x-2">
                         <span class="text-indigo-400 text-lg">Upload_file</span>
-                        <h4 class="text-xs font-black text-white uppercase tracking-wider">Publish to students</h4>
+                       
                     </div>
-                    <span class="text-sm bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 p-2 rounded-md font-bold">ExamsHub</span>
+                    <span class="text-sm bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 p-2 rounded-md font-bold">Publish to Students</span>
                 </div>
                 <div class="p-3 bg-slate-900/70 rounded-xl border border-slate-800 flex items-center justify-between text-sm transition-colors hover:border-slate-600">
                     <div>
@@ -111,6 +116,9 @@
         </div>
 
     </main>
+    <script>
+        lucide.createIcons();
+    </script>
     
 </body>
 </html>
