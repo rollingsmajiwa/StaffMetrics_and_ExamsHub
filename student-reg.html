@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-registration</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-950 flex items-center justify-center min-h-screen p-2 sm:p-5">
+    <main class="w-full bg-slate-850 rounded-lg min-h-[780px] flex flex-col justify-between border border-slate-700 relative text-slate-100">
+        <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl text-white p-4 borde-b border-slate-800/70 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="w-10 h-10 rounded-xl flex justify-center items-center hover:text-blue-400 transition-colors"><span class="text-base"><i data-lucide="arrow-left"></i></span></a>
+                <div>
+                    <h2 class="text-sm font-bold uppercase tracking-widest text-white">Student Onboarding</h2>
+                    <p class="text-xs text-blue-800 font-bold tracking-wider uppercase">Setup Flow</p>
+                </div>
+                <div class="w-9 h-9 bg-gradient-to-r from-blue-700 to bg-indigo-500 rounded-lg flex items-center justify-center border border-blue-400/30">
+                    <i data-lucide="user-plus" class="text-white w-5 h-5"></i>
+                </div>
+
+        </header>
+        <div class="flex-1 flex-col justify-center space-y-4 p-4">
+            <div class="text-center space-y-2">
+                <h1 class="text-xl font-black text-white tracking-tight">Create Account</h1>
+            
+            </div>
+            <form action="action_page.php" method="post" class="space-y-4">
+                <div class="flex flex-col">
+                    <label for="fname" class="text-xs font-black text-slate-500 uppercase tracking-widest p-1">Full Name</label>
+                    <input class="w-full bg-slate-950/70 border border-slate-800/80 rounded-xl py-3 pl-9 pr-4 font-semibold text-slate-200 placeholder-slate-500" type="text" id="fname" name="fname" placeholder="e.g Rollings Majiwa" required>
+                </div>
+                <div class="flex flex-col">
+                    <label for="text" class="text-xs font-black text-slate-500 uppercase tracking-widest p-1">Admission Number</label>
+                    <input class="w-full bg-slate-950/70 border border-slate-800/80 rounded-xl py-3 pl-9 pr-4 font-semibold text-slate-200 placeholder-slate-500" type="text" id="number" name="text" placeholder="e.g, 8123" required>
+                </div>
+                <div class="flex flex-col">
+                    <label for="number" class="text-xs font-black text-slate-500 uppercase tracking-widest p-1">Grade</label>
+                    <select class="p-4 bg-slate-900 border border-slate-800/70 font-semibold rounded-xl text-slate-500">
+                        <option>Select your Grade</option>
+                        <option>Grade 7</option>
+                        <option>Grade 8</option>
+                        <option>Grade 9</option>
+                    </select>
+                </div>
+                <div class="flex flex-col">
+                    <label for="password" class="text-xs font-black text-slate-500 uppercase tracking-widest p-1"> Portal Password</label>
+                    <input class="w-full bg-slate-950/70 border border-slate-800/80 rounded-xl py-3 pl-9 pr-4 font-semibold text-slate-200 placeholder-slate-500" type="password" id="password" name="password" placeholder="************" required>
+                </div>
+                <div class="p-2">
+                    <button type="submit" class="w-full bg-blue-500 hover:bg-blue-400 text-xs font-extrabold rounded-2xl">Register Account</button>
+                </div>
+            </form>
+            <div>Already Registered?<a href="student-dashboard.html" class="text-blue-400 hover:underline">Access Student Portal</a></div>
+        </div>
+
+    </main>
+   <script>
+        lucide.createIcons();
+    </script> 
+</body>
+</html>
